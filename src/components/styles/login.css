@@ -1,0 +1,123 @@
+.login {
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 40px 15px 60px;
+    box-shadow: 0 0 3px #aaa;
+    width: 60%;
+}
+
+input{ width: 100% }
+
+.card {
+    border: 0;
+    width: 70%;
+    margin: 0 auto
+}
+
+img{
+    margin: 0 auto;
+    display: block;
+}
+
+h4 { margin: 15px 0 50px }
+
+p {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: rgb(49, 49, 49)
+}
+
+input, select{
+    padding: 10px;
+    border: 1px solid #eee;
+    color: #000;
+    background: transparent;
+    font-size: 14px;
+    min-height: 50px
+}
+
+input[name="phone"] {
+    border-left: 0;
+    width: 80%
+}
+
+select{ color: #aaa; width: 20% }
+
+.inp{
+    width: 80%;
+    margin: 0 auto
+}
+
+input[type="submit"] {
+    width: auto;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    background: #395197;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+input[value="Confirm"] { margin-right: 5px; min-width: 45% } 
+
+input[value="Resend code"] { margin-left: 5px; min-width: 45% } 
+small{
+    display: block
+}
+
+small a, small a:hover{ color: #f59f14 }
+
+.verif input[value="Resend code"] {
+    color: #f59f14;
+    background: #fff;
+    border: 1px solid #f59f14;
+}
+
+.verif input[type="text"] {
+    text-align: center;
+    letter-spacing: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Done */
+.done i.fas.fa-check-circle {
+    display: block;
+    width: 100%;
+    font-size: 200px;
+    color: #00a300;
+    margin-bottom: 25px
+}
+
+.done span.no{ color: blue }
+.done span.wait{ color: #f59f14 }
+.done h4 { margin: 5px 0 }
+
+.login input[type="checkbox"], .login input[type="submit"] { min-height: auto }
+
+@media(max-width: 767px){
+    .login { padding: 10px 12px 20px; width: 90% }
+    .login .logo img { width: 60% }
+    .login .card { width: 90% }
+    .login .card h4 {
+        font-size: 20px;
+        margin: 5px 0 10px;
+    }
+    .login p { text-align: center }
+
+    .inp { width: 100% }
+
+    input, select { padding: 10px; font-size: 14px }
+}
+
+@media(min-width: 768px)and(max-width: 991px){
+    .login .card { width: 100% }
+    .login .card .inp { width: 90% }
+}
+
+@media(max-width: 767px){ 
+    .login .inp input[type= "number"]{ width: 70% }
+    .login .inp select{ width: 30% }
+}
+.login .logo img { width: 80% }

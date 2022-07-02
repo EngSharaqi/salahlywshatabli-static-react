@@ -1,0 +1,55 @@
+.container.login.orders { padding: 10px 10px 0 }
+
+.orders .card {
+    margin: 0;
+    text-align: left;
+    width: 100%
+}
+
+.orders .card i.fas.fa-hammer, .orders i.fas.fa-map-marker-alt, .orders i.fas.fa-clock, .orders i.fas.fa-money-check {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.orders i.fas.fa-map-marker-alt, .orders i.fas.fa-clock, .orders i.fas.fa-money-check {
+    border: 0;
+    color: #395197;
+}
+
+.orders span.no { color: blue }
+
+.orders .price { margin-top: auto }
+
+.alert-parent, .det { width: 100% }
+
+.orders .alert.alert-info, .orders .alert.alert-warning, .orders .alert.alert-success {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.details{ margin-top: 10px }
+
+.orders .details-son { width: 100% }
+
+.orders .date { padding-left: 0 }
+
+.orders .service h6, .orders .service p {
+    padding-left: 35px;
+}
+
+.orders input[type="submit"] {
+    width: auto;
+    width: 25%;
+    margin: 15px auto;
+}
+
+.orders input[value="Cancel order"] {
+    color: red;
+    border: 1px solid red;
+    background: #fff;
+}

@@ -1,0 +1,215 @@
+*{ margin: 0; transition: .2s all ease-in-out}
+
+.nav {
+    background-color: #395197;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+    padding: 25px 0 17px;
+    text-transform: uppercase;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.nav a { color: #fff }
+
+.nav img {
+    width: 150px
+}
+
+.btn-info {
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 2px 8px;
+    background: #f59f14;
+    border-color: transparent;
+    margin-top: -20px
+}
+
+.nav ul.nav-profile-f { justify-content: unset; position: relative; cursor: pointer; }
+.nav ul.nav-profile-f:hover ul.hover {display: block }
+
+.nav img.nav-profile-p {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.nav ul.hover li:hover {
+    background: #eee;
+    border-radius: 5px;
+    padding: 0 0 0 5px;
+    text-decoration: unset;
+}
+
+.nav ul.hover {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: auto;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #eee;
+    padding: 15px;
+    line-height: 2.5;
+}
+
+.nav .hover i.fas.fa-heart {
+    position: unset;
+    background: unset;
+    color: unset;
+    margin: unset;
+    top: unset;
+    right: unset;
+    padding: unset;
+    width: unset;
+    height: unset;
+    border-radius: unset;
+}
+
+.nav .hover i, .nav .hover i.fas.fa-heart {
+    min-width: 20px;
+    color: #395197 ;
+}
+
+.nav ul.hover li.signout i.fas.fa-sign-out-alt, .nav ul.hover li.signout a { color: red !important }
+
+.nav .hover li, .nav .hover li a {
+    color: #000;
+    text-transform: capitalize;
+}
+
+.nav .hover li a { text-decoration: unset }
+
+.nav .hover li { display: block; text-align: left }
+
+.nav .nav-profile-f li span { text-transform: capitalize }
+
+.f-bar {
+    height: 100%;
+    width: 100%;
+    margin-top: auto;
+    text-align: right
+}
+
+.col-xs-6{ width: 50% }
+
+i#bar {
+    font-size: 25px;
+    margin-top: 10%;
+    cursor: pointer
+}
+
+div#sideBar { overflow-y: scroll }
+
+.side {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #395197;
+    padding: 10% 0 0 25px;
+    overflow-y: scroll;
+    z-index: 999999999999;
+}
+
+.side h4 {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    /* border-bottom: 1px solid #eeeeee21; */
+    padding: 15px;
+}
+
+.side h4:hover { letter-spacing: 5px }
+
+.over{ overflow-y: scroll }
+.show{ display: block }
+.hide{ display: none }
+.unOver{ overflow-y: hidden }
+
+.side i.fas.fa-times {
+    font-size: 25px;
+    margin-right: 8%;
+    display: block;
+    cursor: pointer;
+    background: #395197;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 7px 12px;
+    margin-left: 30px;
+}
+
+.side h5 {
+    width: 100%;
+    display: block;
+    text-align: right;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.show-s { display: block }
+
+.side h5 i.fas.fa-times:hover { font-size: 30px; }
+.side h4 a:hover { text-decoration: unset;
+    border-radius: 10px;
+    background: #ffffff1f;
+    padding: 7px 20px 14px; }
+
+    #sideBar input[type="submit"] {
+        min-height: auto;
+        min-width: 25%;
+        width: auto;
+        margin-bottom: 30px;
+        display: block;
+        margin: 0 0;
+        margin-left: 0;
+        margin-left: 15px;
+    }
+
+#sideBar input[type="submit"]:hover {
+    background: #ff0f0f;
+    border: 1px solid #ff0f0f;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+@media(max-width: 991px){
+    .nav .middle-s, .nav .right-s > ul {
+        display: none
+    }
+
+    .nav img { margin-left: 0}
+}
+
+@media(min-width: 992px){
+    .f-bar { display: none }
+}
+
+@media(min-width: 768px){
+    i#bar { margin-top: 8% }
+}

@@ -1,0 +1,125 @@
+.fav .row { margin-bottom: 20px }
+
+.fav .back-img {
+    background-image: url(https://placeholder.photo/img/1350x350);
+    width: 100%;
+    background-size: cover;
+    height: 250px;
+    margin-top: 68px;
+}
+
+.fav .card { border-radius: 10px; margin-bottom: 20px }
+
+.fav .container.main {
+    border-radius: 5px;
+    box-shadow: 0 0 5px #aaa;
+    margin-top: -50px;
+    background: #fff;
+    padding: 10px;
+}
+
+.fav .cover{
+    background-image: url('https://placeholder.photo/img/350x110');
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 110px;
+}
+.fav .cover.com{ background-image: url('https://placeholder.photo/img/350x150'); height: 150px }
+
+.fav .card {
+    border: 0;
+    width: 100%;
+    margin: 0 auto 15px;
+    padding: 0 0 15px;
+    box-shadow: 0 0 2px #aaa;
+    /* min-height: 345px; */
+    min-height: auto;
+    margin-bottom: 20px;
+}
+
+.fav .profileP{
+    background-image: url('https://placeholder.photo/img/100');
+    width: 100px;
+    height: 100px;
+    margin: -30px auto 10px;
+    border-radius: 50%;
+    background-size: cover;
+    border: 2px solid #fff;
+
+
+}
+
+.fav i.fas.fa-map-marker-alt { color: #395197 }
+.fav i.fas.fa-star { color: gold }
+
+.fav p {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.fav ul {
+    padding: 0 10px 10px;
+}
+
+.fav button {
+    width: 25%;
+    display: inline-block;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.fav button.btn.btn-success {
+    margin-right: 5px;
+    background: #395197;
+    border: 1px solid #395197
+}
+
+.fav button.btn.btn-info {
+    margin-left: 5px;
+    border: 1px solid #f59f14;
+    color: #f59f14;
+    background: #fff;
+}
+
+.fav button.btn.btn-info:hover, .fav button.btn.btn-info:active {
+    background: #f59f14;
+    color: #fff;
+}
+
+.fav button.btn.btn-success:hover, .fav button.btn.btn-success:active {
+    background: #1c284d;
+}
+
+/* Shatabli style */
+.shatabli .cover{     background-image: url('https://placeholder.photo/img/350x150'); height: 150px}
+
+.shatabli .card{ position: relative }
+
+.shatabli p.sale {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background: #f59f14;
+    width: auto;
+    border-radius: 0 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.fav button.btn.btn-success, button.btn.btn-info {
+    margin-right: 5px;
+    background: #395197;
+    border: 1px solid #395197;
+    padding: 5px 15px;
+    min-width: 30%;
+    width: auto;
+    height: auto;
+}
+
+@media(max-width: 767px){
+    .fav .main img { width: 100% }
+}

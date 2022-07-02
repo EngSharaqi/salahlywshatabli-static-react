@@ -1,0 +1,55 @@
+.wallet .container.main { padding: 15px 25px }
+
+.wallet i.fas.fa-wallet {
+    font-size: 85px;
+    margin: 0 auto;
+    color: #f59f14;
+}
+
+.wallet h6 {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    color: #f59f14
+}
+
+.withdraw {
+    width: 100%;
+    text-align: left;
+}
+
+.row.status {
+    box-shadow: 0 0 5px #bbb;
+    padding: 10px 15px 0;
+    border-radius: 10px;
+}
+
+.withdraw h5, .withdraw p {
+    text-align: left;
+    padding-left: 0
+}
+
+.status .alert.alert-warning, .status .alert.alert-success, .status .alert.alert-danger {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.wallet input[type='submit']{ margin: 5px }
+
+.wallet input[type='submit']:hover { background: #192446 }
+
+.wallet input[value="Withdraw"] {
+    background: #fff;
+    border: 1px solid #f59f14;
+    color: #f59f14;
+}
+
+.wallet input[value="Withdraw"]:hover {
+    color: #fff;
+    background: #f59f14;
+}
+
+.withdraw h5 {
+    margin: 0 0 15px;
+}

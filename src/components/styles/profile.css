@@ -1,0 +1,32 @@
+.profile { padding: 15px }
+
+.profile .card, .profile .inp{ width: 100% }
+
+.profile h4 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.profile input[type="radio"] {
+    width: auto;
+    margin-right: 5px
+}
+
+.profile .chk-parent span{ margin-right: 10px }
+
+.profile h5{ display: block;
+width: 100%;
+margin: 15px 0 0
+}
+
+.profile .pp {
+    background-color: #395197;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 25px 10px;
+    margin: 0 0 30px
+}
+
+.profile .address{ padding-left: 0 }
+
+.profile .last{ padding-right: 0 }

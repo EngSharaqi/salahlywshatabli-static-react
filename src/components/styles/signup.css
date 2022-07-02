@@ -1,0 +1,19 @@
+.signup input {
+    margin-bottom: 15px;
+}
+
+.chk-parent{ width: 100%; text-align: left }
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px
+}
+
+.signup a, .signup a:hover {
+    color: #f59f14;
+}
+
+.signup .chk-parent input[type="radio"] {
+    height: auto;
+    min-height: auto;
+}

@@ -1,0 +1,183 @@
+.plumber .cards-holder {
+    background: #395197;
+    margin: 0 2px;
+    height: 265px;
+    margin-bottom: 130px;
+    border-radius: 10px 10px 0 0;
+}
+
+.row.card-a, .row.card-b, .row.card-c {
+    border-radius: 5px;
+    background: #fff;
+    height: 45px;
+    margin: 10% auto;
+    border: 1px solid #ddd;
+}
+
+.row.card-a {
+    width: 70%;
+    opacity: 0.4;
+}
+
+.row.card-b {
+    width: 73%;
+    margin: -14% auto;
+    opacity: 0.6;
+}
+
+.row.card-c {
+    width: 76%;
+    z-index: 99;
+    height: auto;
+    position: relative;
+}
+
+.plumber-p {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    margin: -12% auto 0;
+}
+     
+.plumber ul {
+    text-align: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.plumber .card-c p{ text-align: center; padding: 10px }
+
+.portfolio h5 { color: #395197 }
+
+.plumber .portfolio{
+    margin: 0 auto
+}
+
+.plumber .portfolio {
+    margin: 0 auto;
+    width: 70%
+}
+
+i.fas.fa-share-alt, i.fas.fa-heart {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    background: red;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+}
+
+i.fas.fa-share-alt {
+    left: 1%;
+    background: unset;
+    color: #aaa;
+}
+
+.row.choose {
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    margin: 0 0 15px 0;
+}
+
+.choose button.btn.btn-primary.btn-g {
+    color: #f59f14;
+    font-size: 25px;
+    background: transparent;
+    border: 0;
+}
+
+.choose .active{
+    color: #f59f14 !important
+}
+
+.choose .inactive{
+    color: #aaa !important
+}
+
+.plumber img {
+    width: calc(100%/5);
+    border: 3px solid #fff;
+}
+
+div#reviews-section { margin-bottom: 5px }
+
+.reviews .row { width: 100% }
+
+.reviews > .row {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.reviews {
+    display: block;
+    width: 100%;
+}
+
+.r-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.r-img {
+    padding-left: 0;
+    text-align: left;
+}
+
+.r-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 0;
+}
+
+.r-card {
+    text-align: left;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.other { text-align: right }
+
+
+/* review stars */
+.other p { text-align: right; color: #f59f14 }
+
+.show{ display: flex }
+.block{ display: block }
+.hide{ display: none }
+
+@media(max-width: 767px){
+    .row.card-b { margin: -19% auto }
+
+    .plumber-p {
+        width: 100px;
+        height: 100px;
+    }
+
+    .plumber .portfolio { width: 100% }
+
+    .plumber .cards-holder { margin-bottom: 60px }
+
+    .plumber img { width: calc(100%/3) }
+
+    .portfolio h6 { font-size: 14px }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .plumber img { width: calc(100%/4) }
+    .plumber .cards-holder { margin-bottom: 150px }
+}

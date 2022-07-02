@@ -1,0 +1,51 @@
+.inspection .container.login.inspection { padding: 20px 30px }
+
+.inspection .card, .inspection select#payment { width: 100% }
+
+.inspection h4 {
+    border: 1px solid #e7dfdf;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+.inspection .no { color: #f59f14 }
+
+.inspection h5, .ispection p { text-align: left }
+
+.inspection .inp, .inspection textarea#job_note { width: 100% }
+
+.inspection input, .inspection select, .inspection textarea { margin-bottom: 15px }
+
+.inspection textarea { padding: 10px }
+
+.inspection textarea { border: 1px solid #eee }
+
+.inspection .col.two_inp { padding: 0 }
+
+.inspection .col.two_inp.col.last { padding-left: 10px }
+
+.inspection .row.instructions {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.inspection .mark { background: transparent; }
+.inspection .instructions h5 {
+    color: #395197;
+}
+
+.inspection div.ul {
+    display: block;
+    width: 100%;
+}
+
+.inspection div.ol{
+    display: block;
+    width: 100%;
+}
+
+.inspection div.ol ol {
+    display: block;
+    list-style-type: disc;
+    text-transform: none;
+}

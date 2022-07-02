@@ -1,0 +1,179 @@
+.main{ margin-top: 68px }
+
+.carousel { width: 100% }
+
+.carousel p { text-align: center }
+
+.main button.carousel-control-prev, .main button.carousel-control-next {
+    border: 0;
+    background: transparent;
+}
+
+.main .carousel-innerp {
+    text-align: center;
+    color: #eee;
+}
+
+.main .stat { width: 100%; margin-top: 25px}
+
+.main .stat p { text-align: center }
+
+.stat i {
+    font-size: 45px;
+    color: #395197;
+}
+
+.stat h5 { margin: 0 }
+
+.stat small { text-transform: uppercase; font-weight: bold }
+
+.main .choose-service { width: 100%; background-color: #eee; margin-top: 25px }
+
+.main .container.main.services-main, .main .fav .finishing-main  {
+    margin-top: 0;
+    background: transparent;
+    box-shadow: unset;
+}
+
+.main .services .services-main .card {
+    background: transparent;
+}
+
+.main .services .services-main p {
+    text-align: center;
+    color: #222;
+}
+
+.main .services-main .more button, .finishing-main a button {
+    background: transparent;
+    border: 1px solid #f59f14;
+    padding: 10px 30px;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 40px auto 10px;
+    color: #f59f14;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main a.more:hover { text-decoration: unset }
+
+.main .services-main .more button:hover, .finishing-main a button:hover {
+    background: #f59f14;
+    color: #fff;
+}
+
+.main .choose-service .services .row { margin-bottom: 15px }
+
+.main .finishing-main { margin-top: 0; width: 100% }
+
+.main .row.fav.services.choose-service.finishing-main { background: transparent }
+
+.main .finishing-main .container.main {
+    box-shadow: unset;
+}
+
+.howTo { width: 100% }
+
+.main video {
+    width: 100%;
+    border: 1px solid #aaa;
+    height: auto;
+}
+
+.main iframe.watch { margin: 0 auto }
+
+.howTo img { width: 100% }
+
+.main .subscribe {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+}
+
+.main .subscribe .cover {
+    background-image: url('https://placeholder.photo/img/1350x140');
+    background-size: cover;
+    height: 100%
+}
+
+.main .subscribe .overlay {
+    background-color: #0000007a;
+    height: 100%;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.main .subscribe input[type="email"] {
+    width: 25%;
+    border: 1px solid #f59f14;
+    border-radius: 5px 0 0 5px;
+}
+
+.main .subscribe input[type="submit"] {
+    background: #f59f14;
+    border: 1px solid #f59f14;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+}
+
+.main .subscribe h4 {
+    margin-bottom: 0;
+}
+
+.main .subscribe h4 { color: #fff }
+
+.main .row.subscribe.contact h4 { color: #000 }
+
+.main .row.subscribe.contact .map iframe { width: 100% }
+
+.main .subscribe.contact { position: relative }
+
+.main .contact form {
+    position: absolute;
+    width: 25%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #22222242;
+    padding: 20px;
+    top: 20%;
+    right: 10%;
+}
+
+.main .contact form h5 { color: #395197 }
+
+.main .contact form input, .main .subscribe.contact form input[type="email"] {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #eee !important
+}
+
+.main .contact form input[type="submit"] {
+    background: #395197;
+    border-radius: 5px
+}
+
+@media(max-width: 767px){
+    .subscribe .cover input[type='email'] { width: 60% }
+    .subscribe .cover input[type='submit'] { width: 30% }
+
+    .main .contact form {
+        position: relative;
+        display: block;
+        width: 90%;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #22222242;
+        padding: 20px;
+        top: 0%;
+        right: 0%;
+        margin: 20px auto
+    }
+
+    .main .stat small { font-size: 10px; margin-bottom: 15px }
+
+}

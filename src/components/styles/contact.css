@@ -1,0 +1,49 @@
+.contact h5, .contact p, .contact h6 {
+    text-align: left;
+}
+
+.contact p { padding: 0 }
+
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee
+}
+
+.contact input[type="submit"] {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.contact ul {
+    text-align: left;
+    padding-left: 0;
+    display: block;
+}
+
+.contact ul li a {
+    margin-right: 35px;
+    font-size: 18px;
+}
+
+.contact ul li a {
+    margin-right: 10px;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    padding: 3px 8px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.map{ margin-top: 20px; padding: 0 }
+
+.map iframe { border: 0 }
+
+.fav .row { margin-bottom: 0 }
+.fav.contact .main input, textarea { margin-bottom: 20px }
+@media(max-width: 767px){
+    .main .right-border { border-right: 0 !important }
+}

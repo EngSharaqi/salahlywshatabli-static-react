@@ -1,0 +1,59 @@
+.myOrders .row.buttons {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+}
+.myOrders button.f {
+    background: #395197;
+    color: #fff;
+    z-index: 3
+}
+
+.myOrders .buttons button {
+    border: unset;
+    padding: 12px 0;
+    height: auto;
+    position: relative;
+}
+
+.myOrders button.m {
+    background: #aaa;
+    margin-left: -4%;
+}
+
+.myOrders h5 { margin: 0 }
+
+.myOrders h5, .myOrders p {
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.myOrders .price { margin: auto 0 }
+
+.myOrders .order-card {
+    box-shadow: 0 0 5px #ccc;
+    padding: 20px 20px 0;
+    border-radius: 10px
+}
+
+.myOrders .profile { padding-left: 0; padding-top: 0 }
+
+.myOrders .price, .myOrders .price p { padding-right: 0; text-align: right }
+
+.myOrders .profile > .row { margin-bottom: 0 }
+
+.myOrders button.active {
+    background: #395197;
+    color: #fff;
+    z-index: 3
+}
+
+.myOrders button.inActive {
+    background: #ccc;
+    color: #000;
+    z-index: 1
+}
+
+.visible { display: flex }
+.inVisible { display: none }
