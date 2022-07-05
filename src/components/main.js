@@ -1,8 +1,18 @@
 import './styles/favorite.css';
 import './styles/services.css';
 import './styles/main.css';
+import sliderICover from './imgs/sliderI.png'
+import servsICover from './imgs/cleaning.png'
+import servsIICover from './imgs/carpentry.png'
+import servsIIICover from './imgs/plumbing.png'
+import servsIIIICover from './imgs/electricity.png'
 
 var Main = () => {
+    var sliderI = { "background-image": `url("${sliderICover}")`, 'height': '500px', 'width': '100%', 'max-height': '100%', 'background-size': 'cover' }
+    var coverI = {'background-image': `url('${servsICover}')`, 'background-size': 'cover'}
+    var coverII = {'background-image': `url('${servsIICover}')`, 'background-size': 'cover'}
+    var coverIII = {'background-image': `url('${servsIIICover}')`, 'background-size': 'cover'}
+    var coverIIII = {'background-image': `url('${servsIIIICover}')`, 'background-size': 'cover'}
     return (
         <div className='row main'>
             {/* Carrousel */}
@@ -14,7 +24,8 @@ var Main = () => {
                 </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="https://placeholder.photo/img/1350x550" className="d-block w-100" alt="..." />
+                        {/* <img src={imgI} className="d-block w-100" alt="..." /> */}
+                        <div style={sliderI}></div>
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Welcome to Sal7ly &amp; Shatbli</h5>
                             <p>The first applictaion in the world that brings together largest number of services</p>
@@ -84,7 +95,7 @@ var Main = () => {
                                 <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                     <a href='#'>
                                         <div className='card'>
-                                            <div className='cover cover-serv'></div>
+                                            <div className='cover cover-serv' style = {coverI}></div>
                                             <div className='card-txt'>
                                                 <i></i>
                                                 <h6>Cleaning Services</h6>
@@ -96,7 +107,7 @@ var Main = () => {
                                 <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                     <a href='#'>
                                         <div className='card'>
-                                            <div className='cover cover-serv'></div>
+                                            <div className='cover cover-serv' style = {coverII}></div>
                                             <div className='card-txt'>
                                                 <i></i>
                                                 <h6>Cleaning Services</h6>
@@ -108,7 +119,7 @@ var Main = () => {
                                 <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                     <a href='#'>
                                         <div className='card'>
-                                            <div className='cover cover-serv'></div>
+                                            <div className='cover cover-serv' style = {coverIII}></div>
                                             <div className='card-txt'>
                                                 <i></i>
                                                 <h6>Cleaning Services</h6>
@@ -120,7 +131,7 @@ var Main = () => {
                                 <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                     <a href='#'>
                                         <div className='card'>
-                                            <div className='cover cover-serv'></div>
+                                            <div className='cover cover-serv' style = {coverIIII}></div>
                                             <div className='card-txt'>
                                                 <i></i>
                                                 <h6>Cleaning Services</h6>
@@ -199,7 +210,7 @@ var Main = () => {
                         <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
                             {/* company card */}
                             <div className='card'>
-                                <div className='cover com'></div>
+                                <div className='cover com' style = {coverIII}></div>
                                 <h5>Artisan Company</h5>
                                 <p>For interior and exterior designs for interior and exterior designs ....</p>
                                 {/* <ul>
@@ -216,7 +227,7 @@ var Main = () => {
                             {/* company card */}
                             <div className='card'>
                                 {/* <p className='sale'>30% off</p> */}
-                                <div className='cover com'></div>
+                                <div className='cover com' style = {coverI}></div>
                                 <h5>Artisan Company</h5>
                                 <p>For interior and exterior designs for interior and exterior designs ....</p>
                                 {/* <ul>
@@ -232,7 +243,7 @@ var Main = () => {
                         <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
                             {/* company card */}
                             <div className='card'>
-                                <div className='cover com'></div>
+                                <div className='cover com' style = {coverII}></div>
                                 <h5>Artisan Company</h5>
                                 <p>For interior and exterior designs for interior and exterior designs ....</p>
                                 {/* <ul>
@@ -248,7 +259,7 @@ var Main = () => {
                         <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
                             {/* company card */}
                             <div className='card'>
-                                <div className='cover com'></div>
+                                <div className='cover com' style = {coverIII}></div>
                                 <h5>Artisan Company</h5>
                                 <p>For interior and exterior designs for interior and exterior designs ....</p>
                                 {/* <ul>

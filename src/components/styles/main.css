@@ -14,6 +14,8 @@
     color: #eee;
 }
 
+.d-md-block h5, .d-md-block p { text-shadow: 0 0 15px #141414 }
+
 .main .stat { width: 100%; margin-top: 25px}
 
 .main .stat p { text-align: center }
