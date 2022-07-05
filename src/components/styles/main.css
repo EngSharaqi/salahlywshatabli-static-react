@@ -159,6 +159,8 @@
     border-radius: 5px
 }
 
+.sliderdivs { height: 500px }
+
 @media(max-width: 767px){
     .subscribe .cover input[type='email'] { width: 60% }
     .subscribe .cover input[type='submit'] { width: 30% }
@@ -178,4 +180,6 @@
 
     .main .stat small { font-size: 10px; margin-bottom: 15px }
 
+    .sliderdivs { height: 200px }
 }
+

@@ -8,7 +8,7 @@ import servsIIICover from './imgs/plumbing.png'
 import servsIIIICover from './imgs/electricity.png'
 
 var Main = () => {
-    var sliderI = { "background-image": `url("${sliderICover}")`, 'height': '500px', 'width': '100%', 'max-height': '100%', 'background-size': 'cover' }
+    var sliderI = { "background-image": `url("${sliderICover}")`, 'max-height': '500px', 'width': '100%', 'max-height': '100%', 'background-size': 'cover' }
     var coverI = {'background-image': `url('${servsICover}')`, 'background-size': 'cover'}
     var coverII = {'background-image': `url('${servsIICover}')`, 'background-size': 'cover'}
     var coverIII = {'background-image': `url('${servsIIICover}')`, 'background-size': 'cover'}
@@ -25,7 +25,7 @@ var Main = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         {/* <img src={imgI} className="d-block w-100" alt="..." /> */}
-                        <div style={sliderI}></div>
+                        <div className='sliderdivs' style={sliderI}></div>
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Welcome to Sal7ly &amp; Shatbli</h5>
                             <p>The first applictaion in the world that brings together largest number of services</p>
