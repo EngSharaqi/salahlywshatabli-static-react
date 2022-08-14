@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/nav.css';
 import './styles/footer.css';
-import logo from './imgs/sws.jpeg';
+import logo from './imgs/sws.png';
 var Footer = () => {
     return (
         <div className='row nav footer'>

@@ -1,5 +1,5 @@
 import './styles/nav.css';
-import logo from './imgs/sws.jpeg';
+import logo from './imgs/sws.png';
 var Nav = () => {
     let height = {
         "min-height": window.innerHeight + 100 + 'px',
