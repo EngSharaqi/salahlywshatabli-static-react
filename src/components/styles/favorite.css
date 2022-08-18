@@ -1,7 +1,7 @@
 .fav .row { margin-bottom: 20px }
 
 .fav .back-img {
-    background-image: url(https://placeholder.photo/img/1350x350);
+    /* background-image: url(https://placeholder.photo/img/1350x350); */
     width: 100%;
     background-size: cover;
     height: 250px;

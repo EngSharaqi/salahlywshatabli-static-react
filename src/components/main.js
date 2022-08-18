@@ -1,14 +1,27 @@
 import './styles/favorite.css';
 import './styles/services.css';
 import './styles/main.css';
-import sliderICover from './imgs/sliderI.png'
-import servsICover from './imgs/cleaning.png'
-import servsIICover from './imgs/carpentry.png'
-import servsIIICover from './imgs/plumbing.png'
-import servsIIIICover from './imgs/electricity.png'
+import howto from './imgs/how to order.png'
+import screens from './imgs/screens.png'
+
+import int from './imgs/int logo.png'
+
+import sliderICover from './imgs/header.jpg'
+import sliderIICover from './imgs/header2.jpg'
+import sliderIIICover from './imgs/header3.jpg'
+
+import servsICover from './imgs/service-cleaning.jpg'
+import servsIICover from './imgs/service-carpenter.jpg'
+import servsIIICover from './imgs/service-electric.jpg'
+import servsIIIICover from './imgs/service-plumbing.jpg'
 
 var Main = () => {
+    var intImg = { "background-image": `url("${int}")`, 'max-width' : '100px', 'margin': '10px auto', 'background-size': 'cover' }
+
     var sliderI = { "background-image": `url("${sliderICover}")`, 'max-height': '500px', 'width': '100%', 'max-height': '100%', 'background-size': 'cover' }
+    var sliderII = { "background-image": `url("${sliderIICover}")`, 'max-height': '500px', 'width': '100%', 'max-height': '100%', 'background-size': 'cover' }
+    var sliderIII = { "background-image": `url("${sliderIIICover}")`, 'max-height': '500px', 'width': '100%', 'max-height': '100%', 'background-size': 'cover' }
+
     var coverI = {'background-image': `url('${servsICover}')`, 'background-size': 'cover'}
     var coverII = {'background-image': `url('${servsIICover}')`, 'background-size': 'cover'}
     var coverIII = {'background-image': `url('${servsIIICover}')`, 'background-size': 'cover'}
@@ -28,21 +41,23 @@ var Main = () => {
                         <div className='sliderdivs' style={sliderI}></div>
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Welcome to Sal7ly &amp; Shatbli</h5>
-                            <p>The first applictaion in the world that brings together largest number of services</p>
+                            <p style = {{'width': '100%'}} >The first applictaion in the world that brings together largest number of services</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://placeholder.photo/img/1350x550" className="d-block w-100" alt="..." />
+                        <div className='sliderdivs' style={sliderII}></div>
+                        {/* <img src="https://placeholder.photo/img/1350x550" className="d-block w-100" alt="..." /> */}
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <p style = {{'width': '100%'}} >Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://placeholder.photo/img/1350x550" className="d-block w-100" alt="..." />
+                    <div className='sliderdivs' style={sliderIII}></div>
+                        {/* <img src="https://placeholder.photo/img/1350x550" className="d-block w-100" alt="..." /> */}
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <p style = {{'width': '100%'}} >Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                 </div>
@@ -61,22 +76,21 @@ var Main = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                            <p><i class="fas fa-info-circle"></i></p>
+                        <p><i class="fas fa-users"></i></p>
                             <h5>26.859</h5>
                             <small>Client statisfield</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                            <p><i class="fas fa-info-circle"></i></p>
-                            <h5>25.894</h5>
+                        <p><i class="fas fa-shipping-fast"></i></p>                            <h5>25.894</h5>
                             <small>fullfillied orders</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                            <p><i class="fas fa-info-circle"></i></p>
+                            <p><i class="fas fa-paint-roller"></i></p>
                             <h5>854</h5>
                             <small>finishing companies</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                            <p><i class="fas fa-info-circle"></i></p>
+                            <p><i class="fas fa-hands-helping"></i></p>
                             <h5>978</h5>
                             <small>services provider</small>
                         </div>
@@ -110,7 +124,7 @@ var Main = () => {
                                             <div className='cover cover-serv' style = {coverII}></div>
                                             <div className='card-txt'>
                                                 <i></i>
-                                                <h6>Cleaning Services</h6>
+                                                <h6>Electricity Services</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
                                         </div>
@@ -122,7 +136,7 @@ var Main = () => {
                                             <div className='cover cover-serv' style = {coverIII}></div>
                                             <div className='card-txt'>
                                                 <i></i>
-                                                <h6>Cleaning Services</h6>
+                                                <h6>Carpentry Services</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
                                         </div>
@@ -134,58 +148,7 @@ var Main = () => {
                                             <div className='cover cover-serv' style = {coverIIII}></div>
                                             <div className='card-txt'>
                                                 <i></i>
-                                                <h6>Cleaning Services</h6>
-                                                <p>It is a long established fact that a reader will be</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className='row'>
-                                <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
-                                    <a href='#'>
-                                        <div className='card'>
-                                            <div className='cover cover-serv'></div>
-                                            <div className='card-txt'>
-                                                <i></i>
-                                                <h6>Cleaning Services</h6>
-                                                <p>It is a long established fact that a reader will be</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
-                                    <a href='#'>
-                                        <div className='card'>
-                                            <div className='cover cover-serv'></div>
-                                            <div className='card-txt'>
-                                                <i></i>
-                                                <h6>Cleaning Services</h6>
-                                                <p>It is a long established fact that a reader will be</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
-                                    <a href='#'>
-                                        <div className='card'>
-                                            <div className='cover cover-serv'></div>
-                                            <div className='card-txt'>
-                                                <i></i>
-                                                <h6>Cleaning Services</h6>
-                                                <p>It is a long established fact that a reader will be</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
-                                    <a href='#'>
-                                        <div className='card'>
-                                            <div className='cover cover-serv'></div>
-                                            <div className='card-txt'>
-                                                <i></i>
-                                                <h6>Cleaning Services</h6>
+                                                <h6>Plumbing Services</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
                                         </div>
@@ -210,8 +173,8 @@ var Main = () => {
                         <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
                             {/* company card */}
                             <div className='card'>
-                                <div className='cover com' style = {coverIII}></div>
-                                <h5>Artisan Company</h5>
+                                <div className='cover com' style = {intImg}></div>
+                                <h5>Royal Company</h5>
                                 <p>For interior and exterior designs for interior and exterior designs ....</p>
                                 {/* <ul>
                                     <li><i className="fas fa-map-marker-alt"></i> 2.0 KM</li>
@@ -227,7 +190,7 @@ var Main = () => {
                             {/* company card */}
                             <div className='card'>
                                 {/* <p className='sale'>30% off</p> */}
-                                <div className='cover com' style = {coverI}></div>
+                                <div className='cover com' style = {intImg}></div>
                                 <h5>Artisan Company</h5>
                                 <p>For interior and exterior designs for interior and exterior designs ....</p>
                                 {/* <ul>
@@ -243,7 +206,7 @@ var Main = () => {
                         <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
                             {/* company card */}
                             <div className='card'>
-                                <div className='cover com' style = {coverII}></div>
+                                <div className='cover com' style = {intImg}></div>
                                 <h5>Artisan Company</h5>
                                 <p>For interior and exterior designs for interior and exterior designs ....</p>
                                 {/* <ul>
@@ -256,63 +219,8 @@ var Main = () => {
                                 </div> */}
                             </div>
                         </div>
-                        <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
-                            {/* company card */}
-                            <div className='card'>
-                                <div className='cover com' style = {coverIII}></div>
-                                <h5>Artisan Company</h5>
-                                <p>For interior and exterior designs for interior and exterior designs ....</p>
-                                {/* <ul>
-                                    <li><i className="fas fa-map-marker-alt"></i> 2.0 KM</li>
-                                    <li>4.5 <i className="fas fa-star"></i></li>
-                                </ul>
-                                <div className='buttons'>
-                                    <button className='btn btn-success'>Order</button>
-                                    <button className='btn btn-info'>More</button>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
-                            {/* company card */}
-                            <div className='card'>
-                                {/* <p className='sale'>30% off</p> */}
-                                <div className='cover com'></div>
-                                <h5>Artisan Company</h5>
-                                <p>For interior and exterior designs for interior and exterior designs ....</p>
-                                {/* <ul>
-                                    <li><i className="fas fa-map-marker-alt"></i> 2.0 KM</li>
-                                    <li>4.5 <i className="fas fa-star"></i></li>
-                                </ul>
-                                <div className='buttons'>
-                                    <button className='btn btn-success'>Order</button>
-                                    <button className='btn btn-info'>More</button>
-                                </div> */}
-                            </div>
-                        </div>
-                        <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
-                            {/* company card */}
-                            <div className='card'>
-                                <div className='cover com'></div>
-                                <h5>Artisan Company</h5>
-                                <p>For interior and exterior designs for interior and exterior designs ....</p>
-                                {/* <ul>
-                                    <li><i className="fas fa-map-marker-alt"></i> 2.0 KM</li>
-                                    <li>4.5 <i className="fas fa-star"></i></li>
-                                </ul>
-                                <div className='buttons'>
-                                    <button className='btn btn-success'>Order</button>
-                                    <button className='btn btn-info'>More</button>
-                                </div> */}
-                            </div>
-                        </div>
+                        
                     </div>
-
-                    <div className='row'>
-
-                    </div>
-                    <a href='/shatabli' className='more'>
-                        <button>More Finishing Services</button>
-                    </a>
                 </div>
             </div>
 
@@ -335,13 +243,13 @@ var Main = () => {
             {/* how to order */}
             <div className='howTo'>
                 <h4>How to order from Sal7ly &amp; Shatbli</h4>
-                <img src='https://placeholder.photo/img/1350x550' />
+                <img src={howto} />
             </div>
 
             {/* screens from our app */}
             <div className='howTo screens'>
                 <h4>Screens from our application</h4>
-                <img src='https://placeholder.photo/img/1350x550' />
+                <img src={screens} />
             </div>
 
             {/* What clients say */}
