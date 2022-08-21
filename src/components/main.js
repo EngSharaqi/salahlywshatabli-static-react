@@ -1,19 +1,29 @@
 import './styles/favorite.css';
 import './styles/services.css';
 import './styles/main.css';
+
 import howto from './imgs/how to order.png'
 import screens from './imgs/screens.png'
 
+// logo
 import int from './imgs/int logo.png'
 
+// slider images
 import sliderICover from './imgs/header.jpg'
 import sliderIICover from './imgs/header2.jpg'
 import sliderIIICover from './imgs/header3.jpg'
 
+// services card covers
 import servsICover from './imgs/service-cleaning.jpg'
 import servsIICover from './imgs/service-carpenter.jpg'
 import servsIIICover from './imgs/service-electric.jpg'
 import servsIIIICover from './imgs/service-plumbing.jpg'
+
+// services icons
+import clean from './imgs/cleaning.svg'
+import electricity from './imgs/electricity.svg'
+import carpenter from './imgs/carpenter.svg'
+import plumbing from './imgs/plumbing.svg'
 
 // statistics icons
 import clientSatesfied from './imgs/client satisfied.svg'
@@ -84,7 +94,7 @@ var Main = () => {
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
                                 {/* <i class="fas fa-users"></i> */}
-                                <img src={clientSatesfied} />
+                                <img style={{ 'margin-top': '10px' }} src={clientSatesfied} />
                             </p>
                             <h5>26.859</h5>
                             <small>Client statisfield</small>
@@ -92,7 +102,7 @@ var Main = () => {
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
                                 {/* <i class="fas fa-shipping-fast"></i> */}
-                                <img src={fullfilliedOrders} />
+                                <img style={{ 'margin-top': '10px' }} src={fullfilliedOrders} />
                             </p>                            
                             <h5>25.894</h5>
                             <small>fullfillied orders</small>
@@ -100,7 +110,7 @@ var Main = () => {
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
                                 {/* <i class="fas fa-paint-roller"></i> */}
-                                <img src={finishingCompanies} />
+                                <img style={{ 'margin-top': '20px' }} src={finishingCompanies} />
                             </p>
                             <h5>854</h5>
                             <small>finishing companies</small>
@@ -108,7 +118,7 @@ var Main = () => {
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
                                 {/* <i class="fas fa-hands-helping"></i> */}
-                                <img src={servicesProviders} />                                
+                                <img style={{ 'margin-top': '10px' }} src={servicesProviders} />                                
                             </p>
                             <h5>978</h5>
                             <small>services provider</small>
@@ -130,7 +140,7 @@ var Main = () => {
                                         <div className='card'>
                                             <div className='cover cover-serv' style = {coverI}></div>
                                             <div className='card-txt'>
-                                                <i></i>
+                                                <p className='serviceIcon'><img src= { clean } /></p>
                                                 <h6>Cleaning Services</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
@@ -142,7 +152,7 @@ var Main = () => {
                                         <div className='card'>
                                             <div className='cover cover-serv' style = {coverII}></div>
                                             <div className='card-txt'>
-                                                <i></i>
+                                                <p className='serviceIcon'><img className='elecIcon' src= { electricity } /></p>
                                                 <h6>Electricity Services</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
@@ -154,7 +164,7 @@ var Main = () => {
                                         <div className='card'>
                                             <div className='cover cover-serv' style = {coverIII}></div>
                                             <div className='card-txt'>
-                                                <i></i>
+                                                <p className='serviceIcon'><img src= { carpenter } /></p>
                                                 <h6>Carpentry Services</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
@@ -166,7 +176,7 @@ var Main = () => {
                                         <div className='card'>
                                             <div className='cover cover-serv' style = {coverIIII}></div>
                                             <div className='card-txt'>
-                                                <i></i>
+                                                <p className='serviceIcon'><img className='elecIcon' src= { plumbing } /></p>
                                                 <h6>Plumbing Services</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>

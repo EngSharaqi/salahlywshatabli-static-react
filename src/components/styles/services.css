@@ -5,6 +5,24 @@
     margin-bottom: 20px
 }
 
+/* service icons */
+.serviceIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: -25px auto 1px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #395197;
+}
+
+.serviceIcon img {
+    height: 100%;
+    vertical-align: middle;
+    max-width: 85%
+}
+
+.serviceIcon img.elecIcon { max-width: 70% }
 .services .card-txt {
     background: #fff;
     width: 90%;
@@ -43,4 +61,14 @@
         box-shadow: unset;
         margin-bottom: 40px;
     }
+}
+
+@media(max-width: 576px){
+    .serviceIcon {
+        width: 80px;
+        height: 80px;
+        margin: -40px auto 20px
+    }
+
+    .elecIcon { max-width: 65% !important }
 }
