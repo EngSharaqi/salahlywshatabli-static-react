@@ -15,6 +15,12 @@ import servsIICover from './imgs/service-carpenter.jpg'
 import servsIIICover from './imgs/service-electric.jpg'
 import servsIIIICover from './imgs/service-plumbing.jpg'
 
+// statistics icons
+import clientSatesfied from './imgs/client satisfied.svg'
+import fullfilliedOrders from './imgs/fulfilled orders.svg'
+import finishingCompanies from './imgs/finishing companies.svg'
+import servicesProviders from './imgs/service provider.svg'
+
 var Main = () => {
     var intImg = { "background-image": `url("${int}")`, 'max-width' : '100px', 'margin': '10px auto', 'background-size': 'cover' }
 
@@ -76,21 +82,34 @@ var Main = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                        <p><i class="fas fa-users"></i></p>
+                            <p>
+                                {/* <i class="fas fa-users"></i> */}
+                                <img src={clientSatesfied} />
+                            </p>
                             <h5>26.859</h5>
                             <small>Client statisfield</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                        <p><i class="fas fa-shipping-fast"></i></p>                            <h5>25.894</h5>
+                            <p>
+                                {/* <i class="fas fa-shipping-fast"></i> */}
+                                <img src={fullfilliedOrders} />
+                            </p>                            
+                            <h5>25.894</h5>
                             <small>fullfillied orders</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                            <p><i class="fas fa-paint-roller"></i></p>
+                            <p>
+                                {/* <i class="fas fa-paint-roller"></i> */}
+                                <img src={finishingCompanies} />
+                            </p>
                             <h5>854</h5>
                             <small>finishing companies</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                            <p><i class="fas fa-hands-helping"></i></p>
+                            <p>
+                                {/* <i class="fas fa-hands-helping"></i> */}
+                                <img src={servicesProviders} />                                
+                            </p>
                             <h5>978</h5>
                             <small>services provider</small>
                         </div>

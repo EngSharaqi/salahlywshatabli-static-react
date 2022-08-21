@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+import { withTranslation } from 'react-i18next';
+
+import './i18n';
 
 import Nav from './components/nav';
 
@@ -16,8 +19,11 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 
 function App() {
+  // const { t } = this.props;
   return (
     <div className="App">
+     
+     {/* <h1>{t('Welcome to React')}</h1> */}
       <Nav />
       <BrowserRouter>
           <Route exact path="/" component={Main}/>
