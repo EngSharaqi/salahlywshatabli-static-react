@@ -1,11 +1,21 @@
 import React from 'react';
 import '../styles/favorite.css';
 import '../styles/services.css';
+
+// cover image
 import coverImg from '../imgs/cover-services.jpg'
+
+// service card covers
 import servsICover from '../imgs/service-cleaning.jpg'
 import servsIICover from '../imgs/service-carpenter.jpg'
 import servsIIICover from '../imgs/service-electric.jpg'
 import servsIIIICover from '../imgs/service-plumbing.jpg'
+
+// services icons
+import clean from '../imgs/cleaning.svg'
+import electricity from '../imgs/electricity.svg'
+import carpenter from '../imgs/carpenter.svg'
+import plumbing from '../imgs/plumbing.svg'
 
 var Services = () => {
 
@@ -31,7 +41,7 @@ var Services = () => {
                                             <div className='card'>
                                                 <div className='cover cover-serv' style={coverI}></div>
                                                 <div className='card-txt'>
-                                                    <i></i>
+                                                    <p className='serviceIcon'><img src={clean} /></p>
                                                     <h6>Cleaning Services</h6>
                                                     <p>It is a long established fact that a reader will be</p>
                                                 </div>
@@ -43,7 +53,7 @@ var Services = () => {
                                             <div className='card'>
                                                 <div className='cover cover-serv' style={coverII}></div>
                                                 <div className='card-txt'>
-                                                    <i></i>
+                                                    <p className='serviceIcon'><img className='elecIcon' src={electricity} /></p>
                                                     <h6>Electricity Services</h6>
                                                     <p>It is a long established fact that a reader will be</p>
                                                 </div>
@@ -55,7 +65,7 @@ var Services = () => {
                                             <div className='card'>
                                                 <div className='cover cover-serv' style={coverIII}></div>
                                                 <div className='card-txt'>
-                                                    <i></i>
+                                                    <p className='serviceIcon'><img src={carpenter} /></p>
                                                     <h6>Carpentry Services</h6>
                                                     <p>It is a long established fact that a reader will be</p>
                                                 </div>
@@ -67,7 +77,7 @@ var Services = () => {
                                             <div className='card'>
                                                 <div className='cover cover-serv' style={coverIIII}></div>
                                                 <div className='card-txt'>
-                                                    <i></i>
+                                                    <p className='serviceIcon'><img className='elecIcon' src={plumbing} /></p>
                                                     <h6>Plumbing Services</h6>
                                                     <p>It is a long established fact that a reader will be</p>
                                                 </div>
@@ -75,6 +85,7 @@ var Services = () => {
                                         </a>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
