@@ -94,7 +94,7 @@ var Main = () => {
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
                                 {/* <i class="fas fa-users"></i> */}
-                                <img style={{ 'margin-top': '10px' }} src={clientSatesfied} />
+                                <img style={{ 'margin-top': '15px' }} src={clientSatesfied} />
                             </p>
                             <h5>26.859</h5>
                             <small>Client statisfield</small>
@@ -102,7 +102,7 @@ var Main = () => {
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
                                 {/* <i class="fas fa-shipping-fast"></i> */}
-                                <img style={{ 'margin-top': '10px' }} src={fullfilliedOrders} />
+                                <img style={{ 'margin-top': '15px' }} src={fullfilliedOrders} />
                             </p>                            
                             <h5>25.894</h5>
                             <small>fullfillied orders</small>
@@ -110,7 +110,7 @@ var Main = () => {
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
                                 {/* <i class="fas fa-paint-roller"></i> */}
-                                <img style={{ 'margin-top': '20px' }} src={finishingCompanies} />
+                                <img style={{ 'margin-top': '15px' }} src={finishingCompanies} />
                             </p>
                             <h5>854</h5>
                             <small>finishing companies</small>
@@ -118,7 +118,7 @@ var Main = () => {
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
                                 {/* <i class="fas fa-hands-helping"></i> */}
-                                <img style={{ 'margin-top': '10px' }} src={servicesProviders} />                                
+                                <img style={{ 'margin-top': '15px' }} src={servicesProviders} />                                
                             </p>
                             <h5>978</h5>
                             <small>services provider</small>
