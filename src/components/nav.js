@@ -1,6 +1,16 @@
 import './styles/nav.css';
 import logo from './imgs/sws.png';
+import { useTranslation } from "react-i18next";
+
+
+
 var Nav = () => {
+    const { t, i18n } = useTranslation();
+
+    var handleLang = (event) => {
+        i18n.changeLanguage(event.target.value);
+      }
+
     let height = {
         "min-height": window.innerHeight + 100 + 'px',
         "height": "100%",
@@ -32,15 +42,20 @@ var Nav = () => {
     }
     return (
         <div className='row nav'>
+        <select onChange={handleLang} >
+        <option value="en">English</option>
+        <option value="ar">Arabic</option>
+     </select>
+
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-2 col-xs-6 col-sm-6 col-md-6 left-s'><img src={logo} /></div>
                     <div className='col-lg-7 middle-s'>
                         <ul>
-                            <li><a href='/'>Home</a></li>
-                            <li><a href='/services'>Services</a></li>
-                            <li><a href='/about'>About us</a></li>
-                            <li><a href='contact'>Contact</a></li>
+                            <li><a href='/'>{t('navigation.home')}</a></li>
+                            <li><a href='/services'>{t('navigation.services')}</a></li>
+                            <li><a href='/about'>{t('navigation.aboutus')}</a></li>
+                            <li><a href='contact'>{t('navigation.contact')}</a></li>
                             
                         </ul>
                     </div>
@@ -50,11 +65,11 @@ var Nav = () => {
 
                         {/* if logged in */}
                         <ul className='nav-profile-f'>
-                            <li><span>More</span> <i class="fas fa-sort-down"></i></li>
+                            <li><span>{t('navigation.more')}</span> <i class="fas fa-sort-down"></i></li>
                             <ul className='hover'>
                                
-                                <li><i class="fas fa-file-alt"></i> <a href='/terms'>Terms &amp; Conditions</a></li>
-                                <li><i class="fas fa-university"></i> <a href='/privacy'>Privacy Policy</a></li>
+                                <li><i class="fas fa-file-alt"></i> <a href='/terms'>{t('navigation.termsAndConditions')}</a></li>
+                                <li><i class="fas fa-university"></i> <a href='/privacy'>{t('navigation.privcayPolicy')}</a></li>
                                
                             </ul>
                         </ul>
@@ -69,12 +84,12 @@ var Nav = () => {
             <div onClick={handleCloseSideBar} id='sideBar' className='row side hide' style={height}>
                 <h5><i id='close' class="fas fa-times"></i></h5>
                 <div style={test} >
-                    <h4><a href='/'>Home</a></h4>
-                    <h4><a href='/services'>Services</a></h4>
-                    <h4><a href='/about'>About us</a></h4>
-                    <h4><a href='/contact'>Contact us</a></h4>
-                    <h4> <a href='/terms'>Terms &amp; Conditions</a></h4>
-                    <h4> <a href='/privacy'>Privacy Policy</a></h4>
+                    <h4><a href='/'>{t('navigation.home')}</a></h4>
+                    <h4><a href='/services'>{t('navigation.services')}</a></h4>
+                    <h4><a href='/about'>{t('navigation.aboutus')}</a></h4>
+                    <h4><a href='/contact'>{t('navigation.contact')}</a></h4>
+                    <h4> <a href='/terms'>{t('navigation.termsAndConditions')}</a></h4>
+                    <h4> <a href='/privacy'>{t('navigation.privcayPolicy')}</a></h4>
 
                     {/* <input type='submit' value='Sign Out' /> */}
                 </div>
