@@ -48,10 +48,7 @@ var Nav = () => {
     return (
     <BrowserRouter>
         <div className='row nav'>
-        <select id="lang" onChange={handleLang} >
-            <option value="en">English</option>
-            <option value="ar">Arabic</option>
-         </select>
+        
 
             <div className='container'>
                 <div className='row'>
@@ -78,7 +75,13 @@ var Nav = () => {
                                
                                 <li><i class="fas fa-file-alt"></i> <a href='/terms'>{t('navigation.termsAndConditions')}</a></li>
                                 <li><i class="fas fa-university"></i> <a href='/privacy'>{t('navigation.privcayPolicy')}</a></li>
-                               
+                               <li>
+                                <i class="fas fa-language"></i>
+                                    <select id="lang" onChange={handleLang} >
+                                        <option value="en">English</option>
+                                        <option value="ar">العربية</option>
+                                    </select>
+                               </li>
                             </ul>
                         </ul>
 
@@ -98,6 +101,13 @@ var Nav = () => {
                     <h4><a href='/contact'>{t('navigation.contact')}</a></h4>
                     <h4> <a href='/terms'>{t('navigation.termsAndConditions')}</a></h4>
                     <h4> <a href='/privacy'>{t('navigation.privcayPolicy')}</a></h4>
+                    <h4>
+                        <i class="fas fa-language"></i>
+                        <select id="lang" onChange={handleLang} >
+                            <option value="en">English</option>
+                            <option value="ar">العربية</option>
+                        </select>
+                    </h4>
 
                     {/* <input type='submit' value='Sign Out' /> */}
                 </div>

@@ -145,7 +145,7 @@ var Main = () => {
                                             <div className='cover cover-serv' style = {coverI}></div>
                                             <div className='card-txt'>
                                                 <p className='serviceIcon'><img src= { clean } /></p>
-                                                <h6>Cleaning Services</h6>
+                                                <h6>{t('cleaning')}</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
                                         </div>
@@ -157,7 +157,7 @@ var Main = () => {
                                             <div className='cover cover-serv' style = {coverII}></div>
                                             <div className='card-txt'>
                                                 <p className='serviceIcon'><img className='elecIcon' src= { electricity } /></p>
-                                                <h6>Electricity Services</h6>
+                                                <h6>{t('electricity')}</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
                                         </div>
@@ -169,7 +169,7 @@ var Main = () => {
                                             <div className='cover cover-serv' style = {coverIII}></div>
                                             <div className='card-txt'>
                                                 <p className='serviceIcon'><img src= { carpenter } /></p>
-                                                <h6>Carpentry Services</h6>
+                                                <h6>{t('carpenter')}</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
                                         </div>
@@ -181,7 +181,7 @@ var Main = () => {
                                             <div className='cover cover-serv' style = {coverIIII}></div>
                                             <div className='card-txt'>
                                                 <p className='serviceIcon'><img className='elecIcon' src= { plumbing } /></p>
-                                                <h6>Plumbing Services</h6>
+                                                <h6>{t('plumbing')}</h6>
                                                 <p>It is a long established fact that a reader will be</p>
                                             </div>
                                         </div>

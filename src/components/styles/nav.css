@@ -85,10 +85,12 @@ ul li {
     border-radius: unset;
 }
 
-.nav .hover i, .nav .hover i.fas.fa-heart {
+.nav .hover i, .nav .hover i.fas.fa-heart, .nav .hover i.fas.fa-language {
     min-width: 20px;
     color: #395197 ;
 }
+
+.nav .hover i.fas.fa-language { min-width: 23px }
 
 .nav ul.hover li.signout i.fas.fa-sign-out-alt, .nav ul.hover li.signout a { color: red !important }
 
