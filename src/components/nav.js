@@ -13,7 +13,9 @@ var Nav = () => {
     var handleLang = (event) => {
         i18n.changeLanguage(event.target.value);
         var langVal = document.getElementById('lang').value //en || ar
+        var langValSide = document.getElementById('lang_side').value;
         document.getElementsByTagName('body')[0].setAttribute('lang', langVal)
+        document.getElementsByTagName('body')[0].setAttribute('lang', langValSide)
       }
 
     let height = {
@@ -92,25 +94,25 @@ var Nav = () => {
                 </div>
             </div>
 
-            <div onClick={handleCloseSideBar} id='sideBar' className='row side hide' style={height}>
-                <h5><i id='close' class="fas fa-times"></i></h5>
+            <div  id='sideBar' className='row side hide' style={height}>
+                <h5><i onClick={handleCloseSideBar} id='close' class="fas fa-times"></i></h5>
+                
                 <div style={test} >
-                    <h4><a href='/'>{t('navigation.home')}</a></h4>
-                    <h4><a href='/services'>{t('navigation.services')}</a></h4>
-                    <h4><a href='/about'>{t('navigation.aboutus')}</a></h4>
-                    <h4><a href='/contact'>{t('navigation.contact')}</a></h4>
-                    <h4> <a href='/terms'>{t('navigation.termsAndConditions')}</a></h4>
-                    <h4> <a href='/privacy'>{t('navigation.privcayPolicy')}</a></h4>
+                    <h4><a><NavLink to='/'>{t('navigation.home')}</NavLink></a></h4>
+                    <h4><a><NavLink to='/services'>{t('navigation.services')}</NavLink></a></h4>
+                    <h4><a><NavLink to='/about'>{t('navigation.aboutus')}</NavLink></a></h4>
+                    <h4><a><NavLink to='/contact'>{t('navigation.contact')}</NavLink></a></h4>
+                    <h4><a> <NavLink to='/terms'>{t('navigation.termsAndConditions')}</NavLink></a></h4>
+                    <h4><a> <NavLink to='/privacy'>{t('navigation.privcayPolicy')}</NavLink></a></h4>
                     <h4>
-                        <i class="fas fa-language"></i>
-                        <select id="lang" onChange={handleLang} >
-                            <option value="en">English</option>
-                            <option value="ar">العربية</option>
-                        </select>
-                    </h4>
-
+                    <select id="lang_side" onChange={handleLang} >
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                </h4>
                     {/* <input type='submit' value='Sign Out' /> */}
                 </div>
+                
             </div>
         </div>
         <Routes>
