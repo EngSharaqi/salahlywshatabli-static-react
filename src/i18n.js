@@ -13,4 +13,5 @@ export default i18n
     lng: 'en',
     fallbacklng: 'en',
     interpolation: { excapeValue: false },
+
 });

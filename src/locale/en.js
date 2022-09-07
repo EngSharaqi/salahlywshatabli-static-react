@@ -22,8 +22,8 @@ export default {
         iAmProv: 'I am a service provider',
         phone: 'Phone',
         email: 'Email',
-        address: 'Address',
-        addressDetails: '17 El Batrawy st, off Abbas El Akkad, Nasr City, Cairo'
+        address: 'Address: 17 El Batrawy st, off Abbas El Akkad, Nasr City, Cairo',
+        quickView: 'Quick View'
     },
     welcome: 'Welcome to Sala7ly & Shatably',
     screens: 'Screens from our application',
@@ -37,4 +37,9 @@ export default {
     fullfilliedOrders: 'Fullfield Orders',
     finishingCompanies: 'Finishing Companies',
     servsPorviders: 'Services Providers',
+
+    cleaning: 'Cleaning Services',
+    plumbing: 'Plumbing Services',
+    carpenter: 'Carpentery Services',
+    electricity: 'Electricity Services'
 }

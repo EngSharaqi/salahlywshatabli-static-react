@@ -213,3 +213,15 @@ div#sideBar { overflow-y: scroll }
 @media(min-width: 768px){
     i#bar { margin-top: 8% }
 }
+
+/* ar  */
+body[lang='ar'] .f-bar {
+    text-align: left;
+}
+
+body[lang='ar'] .side i.fas.fa-times, .nav ul.hover {
+    right: 0
+}
+
+body[lang='ar'] .side h4, body[lang='ar'] .nav .hover li { text-align: right }
+body[lang='ar'] .nav .hover li { padding-right: 5px; padding-left: 0 }

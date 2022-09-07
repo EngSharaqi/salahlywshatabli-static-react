@@ -1,11 +1,19 @@
 import './styles/nav.css';
 import logo from './imgs/sws.png';
 import { useTranslation } from "react-i18next";
-
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import Services from './services/services'
+import Main from './main'
+import Privacy from './privacy'
+import Terms from './terms'
+import About from './about'
+import Contact from './contact'
 var Nav = () => {
     const { t, i18n } = useTranslation();
     var handleLang = (event) => {
         i18n.changeLanguage(event.target.value);
+        var langVal = document.getElementById('lang').value //en || ar
+        document.getElementsByTagName('body')[0].setAttribute('lang', langVal)
       }
 
     let height = {
@@ -38,23 +46,26 @@ var Nav = () => {
 
     }
     return (
+    <BrowserRouter>
         <div className='row nav'>
-        <select onChange={handleLang} >
-        <option value="en">English</option>
-        <option value="ar">Arabic</option>
-     </select>
+        <select id="lang" onChange={handleLang} >
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+         </select>
 
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-2 col-xs-6 col-sm-6 col-md-6 left-s'><img src={logo} /></div>
                     <div className='col-lg-7 middle-s'>
+                    
                         <ul>
-                            <li><a href='/'>{t('navigation.home')}</a></li>
-                            <li><a href='/services'>{t('navigation.services')}</a></li>
-                            <li><a href='/about'>{t('navigation.aboutus')}</a></li>
-                            <li><a href='contact'>{t('navigation.contact')}</a></li>
+                            <li><NavLink to='/'><a>{t('navigation.home')}</a></NavLink></li>
+                            <li><NavLink to='/services'><a>{t('navigation.services')}</a></NavLink></li>
+                            <li><NavLink to='/about'><a>{t('navigation.aboutus')}</a></NavLink></li>
+                            <li><NavLink to='contact'><a>{t('navigation.contact')}</a></NavLink></li>
                             
                         </ul>
+                        
                     </div>
                     <div className='col-lg-3 col-xs-6 col-sm-6 col-md-6 right-s'>
                         {/* if log out or not logged in */}
@@ -92,6 +103,15 @@ var Nav = () => {
                 </div>
             </div>
         </div>
+        <Routes>
+          <Route exact path="/" element={<Main />}/>
+          <Route exact path="/services" element={<Services />} />
+          <Route exact path="/privacy" element={<Privacy />} />
+          <Route exact path="/terms" element={<Terms />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
+        </BrowserRouter>
     );
 }
 

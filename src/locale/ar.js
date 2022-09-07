@@ -22,8 +22,8 @@ export default {
         iAmProv: 'انا مقدم خدمة',
         phone: 'الهاتف',
         email: 'الإيميل',
-        address: 'العنوان',
-        addressDetails: '17 ش البطراوي، المتفرع من عباس العقاد، مدينة نصر، القاهرة'
+        address: 'العنوان: 17 ش البطراوي، المتفرع من عباس العقاد، مدينة نصر، القاهرة',
+        quickView: 'نظرة سريعة'
     },
     welcome: 'مرحبا في صلحلي و شطبلي',
     screens: 'صور من التطبيق',
@@ -37,4 +37,9 @@ export default {
     fullfilliedOrders: 'طلبات تم الإنتهاء منها',
     finishingCompanies: 'شركات التشطيب',
     servsPorviders: 'مقدمو الخدمات',
+
+    cleaning: 'خدمات التنظيف',
+    plumbing: 'خدمات السباكة',
+    carpenter: 'خدمات النجارة',
+    electricity: 'خدمات الكهرباء'
 }

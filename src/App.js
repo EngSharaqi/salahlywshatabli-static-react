@@ -15,16 +15,6 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <BrowserRouter>
-          <Route exact path="/" component={Main}/>
-          <Route exact path="/services" component={Services} />
-          <Route exact path="/privacy" component={Privacy} />
-          <Route exact path="/terms" component={Terms} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-
-          {/* <Route exact path="/" component={Main}/> */}
-        </BrowserRouter>
       <Footer />
     </div>
   );

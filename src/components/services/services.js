@@ -17,7 +17,10 @@ import electricity from '../imgs/electricity.svg'
 import carpenter from '../imgs/carpenter.svg'
 import plumbing from '../imgs/plumbing.svg'
 
+import { useTranslation } from "react-i18next";
+
 var Services = () => {
+    const { t } = useTranslation();
 
     var cover = { 'background-image': `url('${coverImg}')`, 'background-size': 'cover' }
     var coverI = { 'background-image': `url('${servsICover}')`, 'background-size': 'cover' }
@@ -28,7 +31,7 @@ var Services = () => {
         <div className='row fav services'>
             <div className='back-img' style={cover}></div>
             <div className='container main'>
-                <h4>Choose The Service</h4>
+                <h4>{t('ChooseService')}</h4>
                 {/* choose the service */}
                 <div className='row choose-service' style={{ 'background-color': '#fff' }}>
                     <div className='container'>
@@ -42,7 +45,7 @@ var Services = () => {
                                                 <div className='cover cover-serv' style={coverI}></div>
                                                 <div className='card-txt'>
                                                     <p className='serviceIcon'><img src={clean} /></p>
-                                                    <h6>Cleaning Services</h6>
+                                                    <h6>{t('cleaning')}</h6>
                                                     <p>It is a long established fact that a reader will be</p>
                                                 </div>
                                             </div>
@@ -54,7 +57,7 @@ var Services = () => {
                                                 <div className='cover cover-serv' style={coverII}></div>
                                                 <div className='card-txt'>
                                                     <p className='serviceIcon'><img className='elecIcon' src={electricity} /></p>
-                                                    <h6>Electricity Services</h6>
+                                                    <h6>{t('electricity')}</h6>
                                                     <p>It is a long established fact that a reader will be</p>
                                                 </div>
                                             </div>
@@ -66,7 +69,7 @@ var Services = () => {
                                                 <div className='cover cover-serv' style={coverIII}></div>
                                                 <div className='card-txt'>
                                                     <p className='serviceIcon'><img src={carpenter} /></p>
-                                                    <h6>Carpentry Services</h6>
+                                                    <h6>{t('carpenter')}</h6>
                                                     <p>It is a long established fact that a reader will be</p>
                                                 </div>
                                             </div>
@@ -78,7 +81,7 @@ var Services = () => {
                                                 <div className='cover cover-serv' style={coverIIII}></div>
                                                 <div className='card-txt'>
                                                     <p className='serviceIcon'><img className='elecIcon' src={plumbing} /></p>
-                                                    <h6>Plumbing Services</h6>
+                                                    <h6>{t('plumbing')}</h6>
                                                     <p>It is a long established fact that a reader will be</p>
                                                 </div>
                                             </div>

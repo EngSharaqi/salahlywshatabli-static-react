@@ -72,3 +72,8 @@
 @media(max-width: 991px){
     .footer h5{ margin-top: 20px }
 }
+
+/* ar */
+body[lang='ar'] .footer p, body[lang='ar'] .footer h5, body[lang='ar'] .footer h6, body[lang='ar'] .footer li {
+    text-align: right
+}
