@@ -31,7 +31,11 @@ import fullfilliedOrders from './imgs/fulfilled orders.svg'
 import finishingCompanies from './imgs/finishing companies.svg'
 import servicesProviders from './imgs/service provider.svg'
 
+import { useTranslation } from 'react-i18next' 
+
 var Main = () => {
+    const { t } = useTranslation();
+
     var intImg = { "background-image": `url("${int}")`, 'max-width' : '100px', 'margin': '10px auto', 'background-size': 'cover' }
 
     var sliderI = { "background-image": `url("${sliderICover}")`, 'max-height': '500px', 'width': '100%', 'max-height': '100%', 'background-size': 'cover' }
@@ -56,8 +60,8 @@ var Main = () => {
                         {/* <img src={imgI} className="d-block w-100" alt="..." /> */}
                         <div className='sliderdivs' style={sliderI}></div>
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Welcome to Sal7ly &amp; Shatbli</h5>
-                            <p style = {{'width': '100%'}} >The first applictaion in the world that brings together largest number of services</p>
+                            <h5>{t('welcome')}</h5>
+                            <p style = {{'width': '100%'}} >{t('firstAppInTheWorld')}</p>
                         </div>
                     </div>
                     <div className="carousel-item">
@@ -97,7 +101,7 @@ var Main = () => {
                                 <img style={{ 'margin-top': '15px' }} src={clientSatesfied} />
                             </p>
                             <h5>26.859</h5>
-                            <small>Client statisfield</small>
+                            <small>{t('clientSatisfied')}</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
@@ -105,7 +109,7 @@ var Main = () => {
                                 <img style={{ 'margin-top': '15px' }} src={fullfilliedOrders} />
                             </p>                            
                             <h5>25.894</h5>
-                            <small>fullfillied orders</small>
+                            <small>{t('fullfilliedOrders')}</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
@@ -113,7 +117,7 @@ var Main = () => {
                                 <img style={{ 'margin-top': '15px' }} src={finishingCompanies} />
                             </p>
                             <h5>854</h5>
-                            <small>finishing companies</small>
+                            <small>{t('finishingCompanies')}</small>
                         </div>
                         <div className='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
                             <p>
@@ -121,7 +125,7 @@ var Main = () => {
                                 <img style={{ 'margin-top': '15px' }} src={servicesProviders} />                                
                             </p>
                             <h5>978</h5>
-                            <small>services provider</small>
+                            <small>{t('finishingCompanies')}</small>
                         </div>
                     </div>
                 </div>
@@ -133,7 +137,7 @@ var Main = () => {
                     <div className='fav services'>
 
                         <div className='container main services-main'>
-                            <h4>Choose The Service</h4>
+                            <h4>{t('ChooseService')}</h4>
                             <div className='row'>
                                 <div className='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                     <a href='#'>
@@ -186,7 +190,7 @@ var Main = () => {
                             </div>
 
                             <a href='/services' className='more'>
-                                <button>More Services</button>
+                                <button>{t('moreServices')}</button>
                             </a>
                         </div>
                     </div>
@@ -197,7 +201,7 @@ var Main = () => {
             {/* Finishing Services */}
             <div className='row fav shatabli finishing-main'>
                 <div className='container main finishing-main'>
-                    <h4>Finishing Services</h4>
+                    <h4>{t('finishSrvs')}</h4>
                     <div className='row'>
                         <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
                             {/* company card */}
@@ -259,7 +263,7 @@ var Main = () => {
                     <div className='row fav services'>
 
                         <div className='container main services-main'>
-                            <h4>Watch Our Video Work</h4>
+                            <h4>{t('watchOurVideo')}</h4>
                             <div className='row'>
                                 <iframe className='watch' width="853" height="480" src="https://www.youtube.com/embed/ahy5o5nT4oI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -271,13 +275,13 @@ var Main = () => {
 
             {/* how to order */}
             <div className='howTo'>
-                <h4>How to order from Sal7ly &amp; Shatbli</h4>
+                <h4>{t('howToOrder')}</h4>
                 <img src={howto} />
             </div>
 
             {/* screens from our app */}
             <div className='howTo screens'>
-                <h4>Screens from our application</h4>
+                <h4>{t('screens')}</h4>
                 <img src={screens} />
             </div>
 

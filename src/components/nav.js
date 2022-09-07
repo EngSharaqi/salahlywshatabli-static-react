@@ -2,11 +2,8 @@ import './styles/nav.css';
 import logo from './imgs/sws.png';
 import { useTranslation } from "react-i18next";
 
-
-
 var Nav = () => {
     const { t, i18n } = useTranslation();
-
     var handleLang = (event) => {
         i18n.changeLanguage(event.target.value);
       }
