@@ -14,8 +14,7 @@ var Nav = () => {
         i18n.changeLanguage(event.target.value);
         var langVal = document.getElementById('lang').value //en || ar
         var langValSide = document.getElementById('lang_side').value;
-        document.getElementsByTagName('body')[0].setAttribute('lang', langVal)
-        document.getElementsByTagName('body')[0].setAttribute('lang', langValSide)
+        (window.innerWidth <= 991) ? document.getElementsByTagName('body')[0].setAttribute('lang', langValSide) : document.getElementsByTagName('body')[0].setAttribute('lang', langVal)
       }
 
     let height = {
